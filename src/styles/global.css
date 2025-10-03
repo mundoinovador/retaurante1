@@ -6,6 +6,7 @@
 :root {
   --bg-color-green: #244d3bff;
   --bg-color-red: #b8270bff;
+  --color-light: #f5f1e3ff;
 }
 
 @theme inline {
@@ -125,9 +126,9 @@
 }
 
 .link-second-header {
-  @apply text-[#244d3b] font-bold;
+  @apply text-[var(--bg-color-green)] font-bold;
 }
 
 .link-second-header-check {
-  @apply text-[#b8270b] font-bold;
+  @apply text-[var(--bg-color-red)] font-bold;
 }
