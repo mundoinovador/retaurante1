@@ -10,13 +10,36 @@ import ButtonDefault from "@components/ButtonDefault.astro";
     <SecondHeader />
 
     <section class="relative flex flex-col items-center bg-[var(--color-light)] py-12">
-        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-[50vw] h-[70vh] border bg-[#e5d1b8] relative overflow-hidden">
-            <img class="absolute w-[80%] top-[6rem]" src="/banner-title.png" />
-            <img class="absolute bottom-[-20%] w-[80%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
+        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-[60vw] h-[80vh] border bg-[var(--second-bg)] relative overflow-hidden">
+            <img class="absolute w-[84%] top-[6rem]" src="/banner-title.png" />
+            <img class="absolute bottom-[-30%] w-[86%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
         </div>
 
         <ButtonDefault title="Conheça nosso cardápio" />
     </section>
 
-    <section class="flex w-full h-[80vh] bg-[var(--bg-color-green)] rounded-t-[3rem]"></section>
+    <section class="flex justify-center py-10 w-full bg-[var(--bg-color-green)] rounded-t-[3rem]">
+        <div class="flex w-[64vw] md:max-w-[60vw] gap-[1rem] items-center">
+            <div class="flex flex-col w-[42%]">
+                <h2 class="text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
+    
+                <p class="text-[var(--second-bg)] text-sm">
+                    Bem-vindo à Bikus Rotisserie, onde a tradição da boa culinária ganha vida em cada prato. Convidamos você a experimentar e descobrir por que somos a escolha preferida para quem busca o sabor em São Paulo. Venha nos visitar, faça seu pedido online ou conheça nossos congelados – temos sempre uma opção perfeita para você.
+                    <br>
+                </p>
+
+                <p class="text-[var(--second-bg)] text-sm">
+                    <br>
+                    Aqui, honramos a tradição ao mesmo tempo em que incorporamos toques modernos. Todos os nossos pratos são preparados com ingredientes frescos e selecionados, garantindo o sabor e a autenticidade que você espera de uma rotisserie.
+                </p>
+            </div>
+            
+            <div class="w-[500px] h-[270px] bg-[var(--second-bg)] rounded-3xl"></div>
+        </div>
+    </section>
+    <section class="flex w-full h-[60vh] bg-[var(--second-bg)] rounded-b-[3rem]"></section>
+    <section class="flex w-full h-[50vh] bg-[white] rounded-b-[3rem]"></section>
+    <section class="flex w-full h-[60vh] bg-[var(--second-bg)] rounded-t-[3rem]"></section>
+
+    <footer class="flex w-full h-[60vh] bg-[var(--bg-color-green)]"></footer>
 </Base>
