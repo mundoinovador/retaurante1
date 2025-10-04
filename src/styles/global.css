@@ -133,3 +133,14 @@
 .link-second-header-check {
   @apply text-[var(--bg-color-red)] font-bold;
 }
+
+.title-lista-contato {
+  @apply text-[var(--bg-color-green)] text-sm font-bold mb-[0.1rem];
+}
+.style-list-contato {
+  @apply text-[var(--bg-color-green)] text-[.8rem];
+}
+
+.style-input-form {
+  @apply bg-[var(--second-bg)] border-none focus-visible:ring-0;
+}

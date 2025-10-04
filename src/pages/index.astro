@@ -3,6 +3,8 @@ import Header from "@components/Header.astro";
 import SecondHeader from "@components/SecondHeader.astro"
 import Base from "../layout/Base.astro";
 import ButtonDefault from "@components/ButtonDefault.astro";
+import ImgSection from "@components/ImgSection.astro";
+import {FormRegister} from "@components/react/FormRegister"
 ---
 
 <Base>
@@ -10,9 +12,9 @@ import ButtonDefault from "@components/ButtonDefault.astro";
     <SecondHeader />
 
     <section class="relative flex flex-col items-center bg-[var(--color-light)] py-12">
-        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-[60vw] h-[80vh] border bg-[var(--second-bg)] relative overflow-hidden">
-            <img class="absolute w-[84%] top-[6rem]" src="/banner-title.png" />
-            <img class="absolute bottom-[-30%] w-[86%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
+        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-[1040px] h-[620px] border bg-[var(--second-bg)] relative overflow-hidden">
+            <img class="absolute w-[84%] top-[80px]" src="/banner-title.png" />
+            <img class="absolute top-[290px] w-[84%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
         </div>
 
         <ButtonDefault title="Conheça nosso cardápio" />
@@ -34,12 +36,99 @@ import ButtonDefault from "@components/ButtonDefault.astro";
                 </p>
             </div>
             
-            <div class="w-[500px] h-[270px] bg-[var(--second-bg)] rounded-3xl"></div>
+            <ImgSection />
         </div>
     </section>
-    <section class="flex w-full h-[60vh] bg-[var(--second-bg)] rounded-b-[3rem]"></section>
-    <section class="flex w-full h-[50vh] bg-[white] rounded-b-[3rem]"></section>
-    <section class="flex w-full h-[60vh] bg-[var(--second-bg)] rounded-t-[3rem]"></section>
 
-    <footer class="flex w-full h-[60vh] bg-[var(--bg-color-green)]"></footer>
+    <section class="flex flex-col items-center w-full py-[5rem] gap-2 bg-[var(--second-bg)] rounded-b-[3rem]">
+        <h2 class="text-[1.8rem] text-[var(--bg-color-green)] font-bold">Visite presencialmente o Biku's Rotisserie</h2>
+        <p class="text-4 text-[var(--bg-color-green)] mb-[1.5rem]">Estamos localizados na Rua Miguel Rodrigues, nº 52, no bairro da Vila Madalena em São Paulo.</p>
+
+        <div class="flex w-full ml-[30vw] mb-[2rem] gap-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5193740699215!2d-46.70065598903716!3d-23.549783078719358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57c795f79407%3A0xa0059ddfb11a7f96!2sR.%20Miguel%20Rodrigues%2C%2052%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005447-060!5e0!3m2!1spt-BR!2sbr!4v1759592229736!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[2rem]"></iframe>
+
+            <div>
+                <ul class="mb-4">
+                    <h3 class="title-lista-contato">Horário de Funcionamento:</h3>
+
+                    <li class="style-list-contato">• Domingo	das 09h às 15h
+                    <li class="style-list-contato">• Segunda, sexta e sábado das 09h às 18h.</li>
+                    <li class="style-list-contato">• Terça a quinta-feira das 09h às 19h.</li>
+                </ul>
+
+                <ul class="mb-4">
+                    <h3 class="title-lista-contato">Almoço (buffet):</h3>
+                    <li class="style-list-contato">• Todos os dias das 11h às 14h</li>
+                </ul>
+
+                <h3 class="title-lista-contato">Almoço (takeway):</h3>
+            </div>
+        </div>
+
+        <ButtonDefault title="Acesse o nosso cardápio online" colorBg="var(--bg-color-red)" />
+    </section>
+
+    <section class="flex w-full  py-[5rem] items-center justify-center bg-[white] rounded-b-[3rem]">
+        <div class="flex flex-col pr-[10vw]">
+            <h2 class="text-[1.8rem] text-[var(--bg-color-green)] font-bold">Fábrica de congelados</h2>
+            <p class="style-list-contato mb-4">Lorem ipsum</p>
+
+            <div class="flex">
+                <ButtonDefault title="Seja um distribuidor" />
+            </div>
+        </div>
+
+        <ImgSection bgColor="var(--bg-color-green)" />
+    </section>
+
+    <section class="flex w-full justify-center h-[60vh] bg-[var(--second-bg)] rounded-t-[3rem]">
+        <div class="flex w-[64vw] md:max-w-[60vw] gap-[1.5rem] items-center">
+            <ImgSection />
+
+            <div class="flex flex-col w-[42%]">
+                <h2 class="text-[2rem] font-bold text-[var(--bg-color-green)] mb-4 leading-none">
+                    Festa em casa
+                    <br>
+                    ou eventos corporativos
+                </h2>
+    
+                <p class="text-[var(--bg-color-green)] text-sm">
+                    Oferecemos um serviço completo que leva o melhor da nossa
+                    <br>
+                    culinária até você, proporcionando praticidade e qualidade
+                    <br>
+                    para que você possa aproveitar cada momento com seus convidados.
+                    <br>
+                </p>
+
+                <p class="text-[var(--bg-color-green)] text-sm mb-4">
+                    <br>
+                    Todos os detalhes, desde a preparação e entrega dos pratos
+                    <br>
+                    até a montagem e apresentação, estão sob nossos cuidados,
+                    <br>
+                    com uma equipe experiente e pronta para ajudar no
+                    <br>
+                    planejamento do menu perfeito.
+                </p>
+
+                <div class="flex">
+                    <ButtonDefault title="Solicitar um orçamento" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex flex-col items-center w-full h-[60vh] bg-[var(--bg-color-green)] py-[2rem]">
+        <h2 class="text-[var(--second-bg)] font-bold text-2xl mb-[.8rem]">Contato</h2>
+        <p class="text-[var(--second-bg)] text-sm mb-[1.1rem]">Preencha o formulário abaixo e seja redirecionado para o nosso atendimento via WhatsApp.</p>
+
+        <div class="flex justify-center w-full">
+            <FormRegister client:idle>
+                <div class="flex">
+                    <ButtonDefault title="Enviar mensagem" colorBg="var(--bg-color-red)" />
+                </div>
+            </FormRegister>
+        </div>
+    </footer>
 </Base>

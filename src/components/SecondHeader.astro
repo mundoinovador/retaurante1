@@ -1,14 +1,13 @@
+---
+import { HeaderReact } from "./react/HeaderReact";
+---
+
 <header class="bg-[var(--color-light)]">
     <div class="flex justify-center py-6">
         <img src="/logo.png" alt="" class="w-[120px] mr-8">
     
-        <nav class="flex items-center gap-4">
-            <a href="#" class="link-second-header-check">Inicio</a>
-            <a href="#" class="link-second-header">História</a>
-            <a href="#" class="link-second-header">Endereço e História</a>
-            <a href="#" class="link-second-header">Cardápio</a>
-            <a href="#" class="link-second-header">Festa em Casa</a>
-            <a href="#" class="link-second-header">Seja um Revendedor</a>
+        <nav class="flex items-center">
+            <HeaderReact client:idle />
         </nav>
     </div>
 
