@@ -127,7 +127,7 @@
 }
 
 .link-second-header {
-  @apply text-[var(--bg-color-green)] text-sm font-bold;
+  @apply text-[var(--bg-color-green)] text-xs lg:text-sm font-bold;
 }
 
 .link-second-header-check {

@@ -11,8 +11,8 @@ import {FormRegister} from "@components/react/FormRegister"
     <Header />
     <SecondHeader />
 
-    <section class="relative flex flex-col items-center bg-[var(--color-light)] py-12">
-        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-[1040px] h-[620px] border bg-[var(--second-bg)] relative overflow-hidden">
+    <section class="relative flex flex-col items-center bg-[var(--color-light)] pb-10">
+        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-full px-[5%] lg:w-[1020px] h-[620px] border bg-[var(--second-bg)] relative overflow-hidden">
             <img class="absolute w-[84%] top-[80px]" src="/banner-title.png" />
             <img class="absolute top-[290px] w-[84%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
         </div>
@@ -20,23 +20,25 @@ import {FormRegister} from "@components/react/FormRegister"
         <ButtonDefault title="Conheça nosso cardápio" />
     </section>
 
-    <section class="flex justify-center py-10 w-full bg-[var(--bg-color-green)] rounded-t-[3rem]">
-        <div class="flex w-[1040px] justify-between gap-[1rem] items-center">
-            <div class="flex flex-col w-[42%]">
-                <h2 class="text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
-    
-                <p class="text-[var(--second-bg)] text-sm">
-                    Bem-vindo à Bikus Rotisserie, onde a tradição da boa culinária ganha vida em cada prato. Convidamos você a experimentar e descobrir por que somos a escolha preferida para quem busca o sabor em São Paulo. Venha nos visitar, faça seu pedido online ou conheça nossos congelados – temos sempre uma opção perfeita para você.
-                    <br>
-                </p>
+    <section class="flex w-full bg-[var(--color-light)]">
+        <div class="flex justify-center w-full bg-[var(--bg-color-green)] rounded-t-[3rem]">
+            <div class="flex w-[1024px] py-10 justify-between gap-[1rem] items-center">
+                <div class="flex flex-col w-[42%]">
+                    <h2 class="text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
+        
+                    <p class="text-[var(--second-bg)] text-sm">
+                        Bem-vindo à Bikus Rotisserie, onde a tradição da boa culinária ganha vida em cada prato. Convidamos você a experimentar e descobrir por que somos a escolha preferida para quem busca o sabor em São Paulo. Venha nos visitar, faça seu pedido online ou conheça nossos congelados – temos sempre uma opção perfeita para você.
+                        <br>
+                    </p>
 
-                <p class="text-[var(--second-bg)] text-sm">
-                    <br>
-                    Aqui, honramos a tradição ao mesmo tempo em que incorporamos toques modernos. Todos os nossos pratos são preparados com ingredientes frescos e selecionados, garantindo o sabor e a autenticidade que você espera de uma rotisserie.
-                </p>
+                    <p class="text-[var(--second-bg)] text-sm">
+                        <br>
+                        Aqui, honramos a tradição ao mesmo tempo em que incorporamos toques modernos. Todos os nossos pratos são preparados com ingredientes frescos e selecionados, garantindo o sabor e a autenticidade que você espera de uma rotisserie.
+                    </p>
+                </div>
+                
+                <ImgSection />
             </div>
-            
-            <ImgSection />
         </div>
     </section>
 

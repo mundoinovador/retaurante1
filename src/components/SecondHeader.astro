@@ -2,9 +2,9 @@
 import { HeaderReact } from "./react/HeaderReact";
 ---
 
-<header class="bg-[var(--color-light)]">
-    <div class="flex justify-center py-6">
-        <img src="/logo.png" alt="" class="w-[120px] mr-8">
+<header class="flex w-full bg-[var(--color-light)]">
+    <div class="flex flex-row w-full items-center justify-around py-6 lg:justify-center lg:flex-row md:flex-col md:justify-center md:px-[10%]">
+        <img src="/logo.png" alt="" class="w-[120px] mr-0 mb-[1rem] lg:mr-8 lg:mb-0">
     
         <nav class="flex items-center">
             <HeaderReact client:idle />
