@@ -11,10 +11,10 @@ import {FormRegister} from "@components/react/FormRegister"
     <Header />
     <SecondHeader />
 
-    <section class="relative flex flex-col items-center bg-[var(--color-light)] pb-10">
-        <div class="flex flex-col mb-8 rounded-[2rem] items-center w-full px-[5%] lg:w-[1020px] h-[620px] border bg-[var(--second-bg)] relative overflow-hidden">
-            <img class="absolute w-[84%] top-[80px]" src="/banner-title.png" />
-            <img class="absolute top-[290px] w-[84%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
+    <section class="relative flex flex-col items-center bg-[var(--color-light)] pb-6 sm:pb-10 px-[.4rem] md:px-[1rem]">
+        <div class="flex flex-col mb-4 sm:mb-8 rounded-[2rem] items-center w-full px-[5%] md:max-h-[60vh] lg:w-[900px] md:w-[700px] sm:w-[630px] h-[74vw] sm:h-[400px] lg:h-[620px] border bg-[var(--second-bg)] relative overflow-hidden">
+            <img class="absolute w-[90%] sm:w-[74%] top-[20%] lg:top-[74px]" src="/banner-title.png" />
+            <img class="absolute top-[50%] md:top-[190px] lg:top-[214px] w-[90%] sm:w-[74%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
         </div>
 
         <ButtonDefault title="Conheça nosso cardápio" />
@@ -22,16 +22,16 @@ import {FormRegister} from "@components/react/FormRegister"
 
     <section class="flex w-full bg-[var(--color-light)]">
         <div class="flex justify-center w-full bg-[var(--bg-color-green)] rounded-t-[3rem]">
-            <div class="flex w-[1024px] py-10 justify-between gap-[1rem] items-center">
-                <div class="flex flex-col w-[42%]">
-                    <h2 class="text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
+            <div class="flex px-[10%] sm:px-0 sm:w-[600px] md:px-0 flex-col w-full lg:flex-row lg:w-[900px] py-[3rem] md:w-[600px] md:py-10 justify-between gap-[1rem] items-center">
+                <div class="flex flex-col w-full md:w-full md:mb-[1rem] lg:mb-0 lg:w-[42%]">
+                    <h2 class="text-[1.5rem] md:text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
         
-                    <p class="text-[var(--second-bg)] text-sm">
+                    <p class="text-[var(--second-bg)] text-xs sm:text-sm">
                         Bem-vindo à Bikus Rotisserie, onde a tradição da boa culinária ganha vida em cada prato. Convidamos você a experimentar e descobrir por que somos a escolha preferida para quem busca o sabor em São Paulo. Venha nos visitar, faça seu pedido online ou conheça nossos congelados – temos sempre uma opção perfeita para você.
                         <br>
                     </p>
 
-                    <p class="text-[var(--second-bg)] text-sm">
+                    <p class="text-[var(--second-bg)] text-xs sm:text-sm mb-[.5rem]">
                         <br>
                         Aqui, honramos a tradição ao mesmo tempo em que incorporamos toques modernos. Todos os nossos pratos são preparados com ingredientes frescos e selecionados, garantindo o sabor e a autenticidade que você espera de uma rotisserie.
                     </p>
@@ -42,14 +42,14 @@ import {FormRegister} from "@components/react/FormRegister"
         </div>
     </section>
 
-    <section class="flex flex-col items-center w-full py-[5rem] gap-2 bg-[var(--second-bg)] rounded-b-[3rem]">
-        <h2 class="text-[1.8rem] text-[var(--bg-color-green)] font-bold">Visite presencialmente o Biku's Rotisserie</h2>
-        <p class="text-4 text-[var(--bg-color-green)] mb-[1.5rem]">Estamos localizados na Rua Miguel Rodrigues, nº 52, no bairro da Vila Madalena em São Paulo.</p>
+    <section class="flex items-center flex-col w-full py-[5rem] gap-2 bg-[var(--second-bg)] rounded-b-[3rem]">
+        <h2 class="text-[1.2rem] text-center text-[var(--bg-color-green)] font-bold">Visite presencialmente o Biku's Rotisserie</h2>
+        <p class="w-[80%] md:w-full text-xs text-center text-[var(--bg-color-green)] mb-[1.5rem]">Estamos localizados na Rua Miguel Rodrigues, nº 52, no bairro da Vila Madalena em São Paulo.</p>
 
-        <div class="flex w-full ml-[25%] mb-[2rem] gap-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5193740699215!2d-46.70065598903716!3d-23.549783078719358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57c795f79407%3A0xa0059ddfb11a7f96!2sR.%20Miguel%20Rodrigues%2C%2052%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005447-060!5e0!3m2!1spt-BR!2sbr!4v1759592229736!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[2rem]"></iframe>
+        <div class="flex flex-col w-full items-center md:mr-[25%] lg:mr-[40%] lg:pl-[20%]  lg:flex-row lg:justify-center mb-[2rem] gap-6 px-[1rem]">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5193740699215!2d-46.70065598903716!3d-23.549783078719358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57c795f79407%3A0xa0059ddfb11a7f96!2sR.%20Miguel%20Rodrigues%2C%2052%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005447-060!5e0!3m2!1spt-BR!2sbr!4v1759592229736!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[1rem] w-full max-w-[400px] sm:max-w-full h-[270px] sm:w-[500px] lg:w-[500px] md:h-[300px]"></iframe>
 
-            <div>
+            <div class="flex flex-col w-full max-w-[400px] sm:max-w-full sm:w-[500px] lg:w-auto">
                 <ul class="mb-4">
                     <h3 class="title-lista-contato">Horário de Funcionamento:</h3>
 
@@ -71,25 +71,27 @@ import {FormRegister} from "@components/react/FormRegister"
     </section>
 
     <section class="flex w-full py-[5rem] items-center justify-center bg-[white] rounded-b-[3rem]">
-        <div class="flex w-[1040px] justify-between items-center">
-            <div class="flex flex-col">
+        <div class="flex flex-col w-full sm:w-[600px] lg:w-full lg:max-w-[900px] lg:flex-row justify-between items-center px-[1rem] sm:px-0">
+            <div class="flex flex-col w-full items-center lg:w-fit lg:items-start">
                 <h2 class="text-[1.8rem] text-[var(--bg-color-green)] font-bold">Fábrica de congelados</h2>
                 <p class="style-list-contato mb-4">Lorem ipsum</p>
     
-                <div class="flex">
+                <div class="flex mb-[1rem]">
                     <ButtonDefault title="Seja um distribuidor" />
                 </div>
             </div>
     
-            <ImgSection bgColor="var(--bg-color-green)" />
+            <div class="flex w-full sm:w-fit">
+                <ImgSection bgColor="var(--bg-color-green)" />
+            </div>
         </div>
     </section>
 
-    <section class="flex w-full justify-center h-[60vh] bg-[var(--second-bg)] rounded-t-[3rem]">
-        <div class="flex w-[1040px] gap-[1.5rem] items-center justify-between">
+    <section class="flex w-full justify-center bg-[var(--second-bg)] rounded-t-[3rem] py-[5rem]">
+        <div class="flex flex-col-reverse w-full sm:w-[600px] lg:w-[1040px] gap-[1.5rem] items-center justify-between px-[1rem] sm:px-0">
             <ImgSection />
 
-            <div class="flex flex-col">
+            <div class="flex flex-col w-full">
                 <h2 class="text-[2rem] font-bold text-[var(--bg-color-green)] mb-4 leading-none">
                     Festa em casa
                     <br>
@@ -123,9 +125,9 @@ import {FormRegister} from "@components/react/FormRegister"
         </div>
     </section>
 
-    <footer class="flex flex-col items-center w-full h-[60vh] bg-[var(--bg-color-green)] py-[2rem]">
+    <footer class="flex flex-col items-center w-full h-[60vh] bg-[var(--bg-color-green)] py-[2rem] px-[1rem]">
         <h2 class="text-[var(--second-bg)] font-bold text-2xl mb-[.8rem]">Contato</h2>
-        <p class="text-[var(--second-bg)] text-sm mb-[1.1rem]">Preencha o formulário abaixo e seja redirecionado para o nosso atendimento via WhatsApp.</p>
+        <p class="text-center text-[var(--second-bg)] text-sm mb-[1.1rem]">Preencha o formulário abaixo e seja redirecionado para o nosso atendimento via WhatsApp.</p>
 
         <div class="flex justify-center w-full">
             <FormRegister client:idle>

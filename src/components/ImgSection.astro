@@ -4,6 +4,6 @@ import { ContainerImage } from "./react/ContainerImage"
 const {bgColor} = Astro.props
 ---
 
-<div class=`w-[600px] bg-[${bgColor || 'var(--second-bg)'}] rounded-[2rem]`>
+<div class=`flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] bg-[${bgColor || 'var(--second-bg)'}] rounded-[.5rem] md:rounded-[2rem]`>
     <ContainerImage />
 </div>
