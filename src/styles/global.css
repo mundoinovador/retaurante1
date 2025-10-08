@@ -138,7 +138,7 @@
   @apply text-[var(--bg-color-green)] text-sm font-bold mb-[0.1rem];
 }
 .style-list-contato {
-  @apply text-[var(--bg-color-green)] text-[.8rem];
+  @apply text-[var(--bg-color-green)] text-xs sm:text-sm;
 }
 
 .style-input-form {
