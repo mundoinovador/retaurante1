@@ -26,21 +26,21 @@ import AOSInit from "@components/react/AOSInit"
   >
             <div class="flex px-[1rem] sm:px-0 sm:w-[600px] md:px-0 flex-col w-full lg:flex-row lg:w-[900px] py-[3rem] md:w-[600px] md:py-10 justify-between gap-[1rem] items-center">
                 <div class="flex flex-col w-full md:w-full md:mb-[1rem] lg:mb-0 lg:w-[42%]">
-                    <h2 class="text-[1.5rem] lg:text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
+                    <h2 data-aos="zoom-out-down" class="text-[1.5rem] lg:text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
         
-                    <p class="text-[var(--second-bg)] text-xs sm:text-sm">
+                    <p data-aos="zoom-out-left" class="text-[var(--second-bg)] text-xs sm:text-sm">
                         Bem-vindo à Bikus Rotisserie, onde a tradição da boa culinária ganha vida em cada prato. Convidamos você a experimentar e descobrir por que somos a escolha preferida para quem busca o sabor em São Paulo. Venha nos visitar, faça seu pedido online ou conheça nossos congelados – temos sempre uma opção perfeita para você.
                         <br>
                     </p>
 
-                    <p class="text-[var(--second-bg)] text-xs sm:text-sm mb-[.5rem]">
+                    <p data-aos="zoom-out-down" class="text-[var(--second-bg)] text-xs sm:text-sm mb-[.5rem]">
                         <br>
                         Aqui, honramos a tradição ao mesmo tempo em que incorporamos toques modernos. Todos os nossos pratos são preparados com ingredientes frescos e selecionados, garantindo o sabor e a autenticidade que você espera de uma rotisserie.
                     </p>
                 </div>
                 
-                <div data-aos="zoom-in-right" class="flex w-full">
-                    <ImgSection />
+                <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
+                    <ImgSection imgPath="./section1.png" />
                 </div>
             </div>
         </div>
@@ -53,7 +53,9 @@ import AOSInit from "@components/react/AOSInit"
         <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" class="flex flex-col w-full items-center md:mr-[25%] lg:mr-[40%] lg:pl-[20%]  lg:flex-row lg:justify-center mb-[2rem] gap-6 px-[1rem]">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5193740699215!2d-46.70065598903716!3d-23.549783078719358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57c795f79407%3A0xa0059ddfb11a7f96!2sR.%20Miguel%20Rodrigues%2C%2052%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005447-060!5e0!3m2!1spt-BR!2sbr!4v1759592229736!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[1rem] w-full max-w-[400px] sm:max-w-full h-[270px] sm:w-[500px] lg:w-[500px] md:h-[300px]"></iframe>
+            <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
+                    <ImgSection imgPath="./section2.png" />
+                </div>
 
             <div data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
@@ -90,17 +92,19 @@ import AOSInit from "@components/react/AOSInit"
                 </div>
             </div>
     
-            <div data-aos="fade-up-left" class="flex w-full sm:w-fit">
-                <ImgSection bgColor="var(--bg-color-green)" />
-            </div>
+            <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
+                    <ImgSection imgPath="./section3.png" />
+                </div>
         </div>
     </section>
 
     <section class="flex w-full justify-center bg-[var(--second-bg)] rounded-t-[2rem] lg:rounded-t-[3rem] py-[5rem]">
         <div class="flex flex-col-reverse w-full sm:w-[600px] gap-[1.5rem] items-center justify-between px-[1rem] sm:px-0 lg:flex-row lg:justify-between lg:w-[900px]">
             <div data-aos="fade-up"
-     data-aos-duration="3000" class="flex w-full">
-                <ImgSection />
+     data-aos-duration="3000" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
+                <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
+                    <ImgSection imgPath="./section4.png" />
+                </div>
             </div>
 
             <div data-aos="fade-up-left" class="flex flex-col w-full lg:w-fit">
