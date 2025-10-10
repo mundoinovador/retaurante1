@@ -7,8 +7,10 @@ import {
   BreadcrumbList,
 } from "@components/ui/breadcrumb";
 import React from "react";
+import { useSmoothScroll } from "@hooks/useSmoothScroll";
 
 function HeaderReact() {
+  useSmoothScroll();
   const [isLargeScreen, setIsLargeScreen] = React.useState(false);
 
   React.useEffect(() => {
@@ -40,7 +42,10 @@ function HeaderReact() {
 
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <a href="#" className="link-second-header">
+                  <a
+                    href="#visite-presencialmente"
+                    className="link-second-header"
+                  >
                     História
                   </a>
                 </BreadcrumbLink>
@@ -50,18 +55,11 @@ function HeaderReact() {
 
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <a href="#" className="link-second-header">
-                    Endereço e História
-                  </a>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-
-              {/* <BreadcrumbSeparator /> */}
-
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <a href="#" className="link-second-header">
-                    História
+                  <a
+                    href="#fabrica-de-congelados"
+                    className="link-second-header"
+                  >
+                    Endereço e Horários
                   </a>
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -70,7 +68,7 @@ function HeaderReact() {
 
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <a href="#" className="link-second-header">
+                  <a href="#festa-em-casa" className="link-second-header">
                     Cardápio
                   </a>
                 </BreadcrumbLink>
@@ -80,18 +78,8 @@ function HeaderReact() {
 
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <a href="#" className="link-second-header">
+                  <a href="#contato" className="link-second-header">
                     Festa em Casa
-                  </a>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-
-              {/* <BreadcrumbSeparator /> */}
-
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <a href="#" className="link-second-header">
-                    Seja um Revendedor
                   </a>
                 </BreadcrumbLink>
               </BreadcrumbItem>

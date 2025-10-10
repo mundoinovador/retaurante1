@@ -15,123 +15,89 @@ import AOSInit from "@components/react/AOSInit"
 <Base>
     <Header />
     <SecondHeader />
-
+    
     <SectionBanner client:load>
         <ButtonDefault title="Conheça nosso cardápio" />
     </SectionBanner>
-
-
-    <section class="flex w-full bg-[var(--color-light)]">
-        <div class="flex justify-center w-full bg-[var(--bg-color-green)] rounded-t-[2rem] lg:rounded-t-[3rem]"
-  >
+    
+    <section id="um-pouco-de-bikus" class="flex w-full bg-[var(--color-light)]">
+        <div class="flex justify-center w-full bg-[var(--bg-color-green)] rounded-t-[2rem] lg:rounded-t-[3rem]">
             <div class="flex px-[1rem] sm:px-0 sm:w-[600px] md:px-0 flex-col w-full lg:flex-row lg:w-[900px] py-[3rem] md:w-[600px] md:py-10 justify-between gap-[1rem] items-center">
                 <div class="flex flex-col w-full md:w-full md:mb-[1rem] lg:mb-0 lg:w-[42%]">
                     <h2 data-aos="zoom-out-down" class="text-[1.5rem] lg:text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
-        
                     <p data-aos="zoom-out-left" class="text-[var(--second-bg)] text-xs sm:text-sm">
                         Bem-vindo à Bikus Rotisserie, onde a tradição da boa culinária ganha vida em cada prato. Convidamos você a experimentar e descobrir por que somos a escolha preferida para quem busca o sabor em São Paulo. Venha nos visitar, faça seu pedido online ou conheça nossos congelados – temos sempre uma opção perfeita para você.
                         <br>
                     </p>
-
                     <p data-aos="zoom-out-down" class="text-[var(--second-bg)] text-xs sm:text-sm mb-[.5rem]">
                         <br>
                         Aqui, honramos a tradição ao mesmo tempo em que incorporamos toques modernos. Todos os nossos pratos são preparados com ingredientes frescos e selecionados, garantindo o sabor e a autenticidade que você espera de uma rotisserie.
                     </p>
                 </div>
-                
                 <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
                     <ImgSection imgPath="./section1.png" />
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="flex items-center flex-col w-full py-[5rem] gap-2 bg-[var(--second-bg)] rounded-b-[2rem] lg:rounded-b-[3rem]">
+    
+    <section id="visite-presencialmente" class="flex items-center flex-col w-full py-[5rem] gap-2 bg-[var(--second-bg)] rounded-b-[2rem] lg:rounded-b-[3rem]">
         <h2 data-aos="zoom-in-right" class="text-[1.5rem] lg:text-[2rem] text-center text-[var(--bg-color-green)] font-bold">Visite presencialmente o Biku's Rotisserie</h2>
         <p data-aos="zoom-in-left" class="w-[80%] md:w-full text-xs sm:text-sm text-center text-[var(--bg-color-green)] mb-[1.5rem]">Estamos localizados na Rua Miguel Rodrigues, nº 52, no bairro da Vila Madalena em São Paulo.</p>
-
-        <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="flex flex-col w-full items-center md:mr-[25%] lg:mr-[40%] lg:pl-[20%]  lg:flex-row lg:justify-center mb-[2rem] gap-6 px-[1rem]">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="flex flex-col w-full items-center md:mr-[25%] lg:mr-[40%] lg:pl-[20%] lg:flex-row lg:justify-center mb-[2rem] gap-6 px-[1rem]">
             <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
-                    <ImgSection imgPath="./section2.png" />
-                </div>
-
-            <div data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" class="flex flex-col w-full max-w-[400px] sm:max-w-full sm:w-[500px] lg:w-auto">
+                <ImgSection imgPath="./section2.png" />
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="flex flex-col w-full max-w-[400px] sm:max-w-full sm:w-[500px] lg:w-auto">
                 <ul class="mb-4">
                     <h3 class="title-lista-contato">Horário de Funcionamento:</h3>
-
-                    <li class="style-list-contato">• Domingo	das 09h às 15h
+                    <li class="style-list-contato">• Domingo das 09h às 15h
                     <li class="style-list-contato">• Segunda, sexta e sábado das 09h às 18h.</li>
                     <li class="style-list-contato">• Terça a quinta-feira das 09h às 19h.</li>
                 </ul>
-
                 <ul class="mb-4">
                     <h3 class="title-lista-contato">Almoço (buffet):</h3>
                     <li class="style-list-contato">• Todos os dias das 11h às 14h</li>
                 </ul>
-
                 <h3 class="title-lista-contato">Almoço (takeway):</h3>
             </div>
         </div>
-
         <ButtonDefault title="Acesse o nosso cardápio online" colorBg="var(--bg-color-red)" />
     </section>
-
-    <section class="flex w-full py-[5rem] items-center justify-center bg-[white] rounded-b-[3rem]">
+    
+    <section id="fabrica-de-congelados" class="flex w-full py-[5rem] items-center justify-center bg-[white] rounded-b-[3rem]">
         <div class="flex flex-col w-full sm:w-[600px] lg:w-full lg:max-w-[900px] lg:flex-row justify-between items-center px-[1rem] sm:px-0">
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" class="flex flex-col w-full items-center lg:w-fit lg:items-start">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="flex flex-col w-full items-center lg:w-fit lg:items-start">
                 <h2 class="text-[1.5rem] lg:text-[2rem] text-[var(--bg-color-green)] font-bold">Fábrica de congelados</h2>
                 <p class="style-list-contato mb-4">Lorem ipsum</p>
-    
                 <div class="flex mb-[1rem]">
                     <ButtonDefault title="Seja um distribuidor" />
                 </div>
             </div>
-    
             <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
-                    <ImgSection imgPath="./section3.png" />
-                </div>
+                <ImgSection imgPath="./section3.png" />
+            </div>
         </div>
     </section>
-
-    <section class="flex w-full justify-center bg-[var(--second-bg)] rounded-t-[2rem] lg:rounded-t-[3rem] py-[5rem]">
+    
+    <section id="festa-em-casa" class="flex w-full justify-center bg-[var(--second-bg)] rounded-t-[2rem] lg:rounded-t-[3rem] py-[5rem]">
         <div class="flex flex-col-reverse w-full sm:w-[600px] gap-[1.5rem] items-center justify-between px-[1rem] sm:px-0 lg:flex-row lg:justify-between lg:w-[900px]">
-            <div data-aos="fade-up"
-     data-aos-duration="3000" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
+            <div data-aos="fade-up" data-aos-duration="3000" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
                 <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
                     <ImgSection imgPath="./section4.png" />
                 </div>
             </div>
-
             <div data-aos="fade-up-left" class="flex flex-col w-full lg:w-fit">
                 <h2 class="text-[1.5rem] lg:text-[2rem] font-bold text-[var(--bg-color-green)] mb-4 leading-none">
                     Festa em casa
                     <br>
                     ou eventos corporativos
                 </h2>
-    
-                <p class="text-[var(--bg-color-green)] text-xs sm:text:sm">
-                    Oferecemos um serviço completo que leva o melhor da nossa
-                    <br>
-                    culinária até você, proporcionando praticidade e qualidade
-                    <br>
-                    para que você possa aproveitar cada momento com seus convidados.
-                    <br>
+                <p class="text-[var(--bg-color-green)] text-xs sm:text-sm mb-4">
+                   Oferecemos um serviço completo que leva o melhor da nossa culinária até você, proporcionando praticidade e qualidade para que você possa aproveitar cada momento com seus convidados.
                 </p>
-
-                <p class="text-[var(--bg-color-green)] text-xs sm:text:sm mb-4">
-                    <br>
-                    Todos os detalhes, desde a preparação e entrega dos pratos
-                    <br>
-                    até a montagem e apresentação, estão sob nossos cuidados,
-                    <br>
-                    com uma equipe experiente e pronta para ajudar no
-                    <br>
-                    planejamento do menu perfeito.
+                <p class="text-[var(--bg-color-green)] text-xs sm:text-sm mb-4">
+                    Todos os detalhes, desde a preparação e entrega dos pratos até a montagem e apresentação, estão sob nossos cuidados, com uma equipe experiente e pronta para ajudar no planejamento do menu perfeito.
                 </p>
 
                 <div class="flex">
@@ -141,10 +107,9 @@ import AOSInit from "@components/react/AOSInit"
         </div>
     </section>
 
-    <footer class="flex flex-col items-center w-full h-[60vh] bg-[var(--bg-color-green)] py-[2rem] px-[1rem]">
+    <footer id="contato" class="flex flex-col items-center w-full h-[60vh] bg-[var(--bg-color-green)] py-[2rem] px-[1rem]">
         <h2 class="text-[var(--second-bg)] font-bold text-[1.5rem] lg:text-[1.8rem] mb-[.8rem]">Contato</h2>
         <p class="text-center text-[var(--second-bg)] text-xs sm:text-sm mb-[1.1rem]">Preencha o formulário abaixo e seja redirecionado para o nosso atendimento via WhatsApp.</p>
-
         <div class="flex justify-center w-full">
             <FormRegister client:idle>
                 <div class="flex">
@@ -154,3 +119,4 @@ import AOSInit from "@components/react/AOSInit"
         </div>
     </footer>
 </Base>
+
