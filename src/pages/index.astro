@@ -5,23 +5,25 @@ import Base from "../layout/Base.astro";
 import ButtonDefault from "@components/ButtonDefault.astro";
 import ImgSection from "@components/ImgSection.astro";
 import {FormRegister} from "@components/react/FormRegister"
+import SectionBanner from "@components/react/SectionBanner";
+import AOSInit from "@components/react/AOSInit"
+
 ---
+
+<AOSInit client:only="react" />
 
 <Base>
     <Header />
     <SecondHeader />
 
-    <section class="relative flex flex-col items-center bg-[var(--color-light)] pb-6 sm:pb-10 px-[.4rem] md:px-[1rem]">
-        <div class="flex flex-col mb-4 sm:mb-8 rounded-[2rem] items-center w-full px-[5%] md:max-h-[60vh] lg:w-[900px] md:w-[700px] sm:w-[630px] h-[74vw] sm:h-[400px] lg:h-[620px] border bg-[var(--second-bg)] relative overflow-hidden">
-            <img class="absolute w-[90%] sm:w-[74%] top-[20%] lg:top-[74px]" src="/banner-title.png" />
-            <img class="absolute top-[50%] md:top-[190px] lg:top-[214px] w-[90%] sm:w-[74%]" src="https://design.penpot.app/assets/by-file-media-id/6ac113cd-51c8-8126-8006-e265211b45db" alt="">
-        </div>
-
+    <SectionBanner client:load>
         <ButtonDefault title="Conheça nosso cardápio" />
-    </section>
+    </SectionBanner>
+
 
     <section class="flex w-full bg-[var(--color-light)]">
-        <div class="flex justify-center w-full bg-[var(--bg-color-green)] rounded-t-[2rem] lg:rounded-t-[3rem]">
+        <div class="flex justify-center w-full bg-[var(--bg-color-green)] rounded-t-[2rem] lg:rounded-t-[3rem]"
+  >
             <div class="flex px-[1rem] sm:px-0 sm:w-[600px] md:px-0 flex-col w-full lg:flex-row lg:w-[900px] py-[3rem] md:w-[600px] md:py-10 justify-between gap-[1rem] items-center">
                 <div class="flex flex-col w-full md:w-full md:mb-[1rem] lg:mb-0 lg:w-[42%]">
                     <h2 class="text-[1.5rem] lg:text-[2rem] font-bold text-[var(--second-bg)] mb-2">Um pouco de Biku's</h2>
@@ -37,19 +39,25 @@ import {FormRegister} from "@components/react/FormRegister"
                     </p>
                 </div>
                 
-                <ImgSection />
+                <div data-aos="zoom-in-right" class="flex w-full">
+                    <ImgSection />
+                </div>
             </div>
         </div>
     </section>
 
     <section class="flex items-center flex-col w-full py-[5rem] gap-2 bg-[var(--second-bg)] rounded-b-[2rem] lg:rounded-b-[3rem]">
-        <h2 class="text-[1.5rem] lg:text-[2rem] text-center text-[var(--bg-color-green)] font-bold">Visite presencialmente o Biku's Rotisserie</h2>
-        <p class="w-[80%] md:w-full text-xs sm:text-sm text-center text-[var(--bg-color-green)] mb-[1.5rem]">Estamos localizados na Rua Miguel Rodrigues, nº 52, no bairro da Vila Madalena em São Paulo.</p>
+        <h2 data-aos="zoom-in-right" class="text-[1.5rem] lg:text-[2rem] text-center text-[var(--bg-color-green)] font-bold">Visite presencialmente o Biku's Rotisserie</h2>
+        <p data-aos="zoom-in-left" class="w-[80%] md:w-full text-xs sm:text-sm text-center text-[var(--bg-color-green)] mb-[1.5rem]">Estamos localizados na Rua Miguel Rodrigues, nº 52, no bairro da Vila Madalena em São Paulo.</p>
 
-        <div class="flex flex-col w-full items-center md:mr-[25%] lg:mr-[40%] lg:pl-[20%]  lg:flex-row lg:justify-center mb-[2rem] gap-6 px-[1rem]">
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="flex flex-col w-full items-center md:mr-[25%] lg:mr-[40%] lg:pl-[20%]  lg:flex-row lg:justify-center mb-[2rem] gap-6 px-[1rem]">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5193740699215!2d-46.70065598903716!3d-23.549783078719358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57c795f79407%3A0xa0059ddfb11a7f96!2sR.%20Miguel%20Rodrigues%2C%2052%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005447-060!5e0!3m2!1spt-BR!2sbr!4v1759592229736!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[1rem] w-full max-w-[400px] sm:max-w-full h-[270px] sm:w-[500px] lg:w-[500px] md:h-[300px]"></iframe>
 
-            <div class="flex flex-col w-full max-w-[400px] sm:max-w-full sm:w-[500px] lg:w-auto">
+            <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="flex flex-col w-full max-w-[400px] sm:max-w-full sm:w-[500px] lg:w-auto">
                 <ul class="mb-4">
                     <h3 class="title-lista-contato">Horário de Funcionamento:</h3>
 
@@ -72,7 +80,8 @@ import {FormRegister} from "@components/react/FormRegister"
 
     <section class="flex w-full py-[5rem] items-center justify-center bg-[white] rounded-b-[3rem]">
         <div class="flex flex-col w-full sm:w-[600px] lg:w-full lg:max-w-[900px] lg:flex-row justify-between items-center px-[1rem] sm:px-0">
-            <div class="flex flex-col w-full items-center lg:w-fit lg:items-start">
+            <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="flex flex-col w-full items-center lg:w-fit lg:items-start">
                 <h2 class="text-[1.5rem] lg:text-[2rem] text-[var(--bg-color-green)] font-bold">Fábrica de congelados</h2>
                 <p class="style-list-contato mb-4">Lorem ipsum</p>
     
@@ -81,7 +90,7 @@ import {FormRegister} from "@components/react/FormRegister"
                 </div>
             </div>
     
-            <div class="flex w-full sm:w-fit">
+            <div data-aos="fade-up-left" class="flex w-full sm:w-fit">
                 <ImgSection bgColor="var(--bg-color-green)" />
             </div>
         </div>
@@ -89,9 +98,12 @@ import {FormRegister} from "@components/react/FormRegister"
 
     <section class="flex w-full justify-center bg-[var(--second-bg)] rounded-t-[2rem] lg:rounded-t-[3rem] py-[5rem]">
         <div class="flex flex-col-reverse w-full sm:w-[600px] gap-[1.5rem] items-center justify-between px-[1rem] sm:px-0 lg:flex-row lg:justify-between lg:w-[900px]">
-            <ImgSection />
+            <div data-aos="fade-up"
+     data-aos-duration="3000" class="flex w-full">
+                <ImgSection />
+            </div>
 
-            <div class="flex flex-col w-full lg:w-fit">
+            <div data-aos="fade-up-left" class="flex flex-col w-full lg:w-fit">
                 <h2 class="text-[1.5rem] lg:text-[2rem] font-bold text-[var(--bg-color-green)] mb-4 leading-none">
                     Festa em casa
                     <br>
