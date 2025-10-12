@@ -2,7 +2,7 @@
 import Header from "@components/Header.astro";
 import SecondHeader from "@components/SecondHeader.astro"
 import Base from "../layout/Base.astro";
-import ButtonDefault from "@components/ButtonDefault.astro";
+import {ButtonDefault} from "@components/react/ButtonDefault";
 import ImgSection from "@components/ImgSection.astro";
 import {FormRegister} from "@components/react/FormRegister"
 import SectionBanner from "@components/react/SectionBanner";
@@ -10,14 +10,12 @@ import AOSInit from "@components/react/AOSInit"
 
 ---
 
-<AOSInit client:only="react" />
-
 <Base>
     <Header />
     <SecondHeader />
     
     <SectionBanner client:load>
-        <ButtonDefault title="Conheça nosso cardápio" />
+        <ButtonDefault pathClick="#contato" title="Conheça nosso cardápio" />
     </SectionBanner>
     
     <section id="um-pouco-de-bikus" class="flex w-full bg-[var(--color-light)]">
@@ -62,7 +60,7 @@ import AOSInit from "@components/react/AOSInit"
                 <h3 class="title-lista-contato">Almoço (takeway):</h3>
             </div>
         </div>
-        <ButtonDefault title="Acesse o nosso cardápio online" colorBg="var(--bg-color-red)" />
+        <ButtonDefault pathClick="#contato" title="Acesse o nosso cardápio online" colorBg="var(--bg-color-red)" />
     </section>
     
     <section id="fabrica-de-congelados" class="flex w-full py-[5rem] items-center justify-center bg-[white] rounded-b-[3rem]">
@@ -71,7 +69,7 @@ import AOSInit from "@components/react/AOSInit"
                 <h2 class="text-[1.5rem] lg:text-[2rem] text-[var(--bg-color-green)] font-bold">Fábrica de congelados</h2>
                 <p class="style-list-contato mb-4">Lorem ipsum</p>
                 <div class="flex mb-[1rem]">
-                    <ButtonDefault title="Seja um distribuidor" />
+                    <ButtonDefault pathClick="#contato" title="Seja um distribuidor" />
                 </div>
             </div>
             <div data-aos="zoom-in-right" class="flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] ">
@@ -101,7 +99,7 @@ import AOSInit from "@components/react/AOSInit"
                 </p>
 
                 <div class="flex">
-                    <ButtonDefault title="Solicitar um orçamento" />
+                    <ButtonDefault pathClick="#contato" title="Solicitar um orçamento" />
                 </div>
             </div>
         </div>
@@ -120,3 +118,4 @@ import AOSInit from "@components/react/AOSInit"
     </footer>
 </Base>
 
+<AOSInit client:only="react" />
