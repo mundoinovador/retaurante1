@@ -1,9 +1,9 @@
 ---
 import { ContainerImage } from "./react/ContainerImage"
 
-const {bgColor, imgPath} = Astro.props
+const {imgPath} = Astro.props
 ---
 
-<div class=`flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] bg-[${bgColor || 'var(--second-bg)'}] rounded-[.5rem] md:rounded-[2rem]`>
+<div class=`flex w-full sm:w-[600px] md:w-[600px] lg:w-[500px] rounded-[.5rem] md:rounded-[2rem]`>
     <ContainerImage urlImg={imgPath}  />
 </div>
