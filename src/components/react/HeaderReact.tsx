@@ -8,6 +8,7 @@ import {
 } from "@components/ui/breadcrumb";
 import React from "react";
 import { useSmoothScroll } from "@hooks/useSmoothScroll";
+import HumburgerMenu from "./HumburgerMenu";
 
 function HeaderReact() {
   useSmoothScroll();
@@ -87,7 +88,7 @@ function HeaderReact() {
           </BreadcrumbList>
         </Breadcrumb>
       ) : (
-        <p>menu</p>
+        <HumburgerMenu />
       )}
     </div>
   );
